@@ -1090,3 +1090,16 @@ html[xmlns] .slides {
     right: 10px;
   }
 }
+
+::-webkit-input-placeholder { /* Edge */
+  color: #E0E0E0;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #E0E0E0;
+}
+
+::placeholder {
+  color: #E0E0E0;
+}
+
