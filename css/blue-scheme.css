@@ -369,6 +369,28 @@ a.menu-toggle-btn i {
   color: #aaaaaa;
 }
 
+.small-button {
+  padding: 10px 24px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+
+a.small-button.transparent-color {
+  border: 1px solid #23d2f9;
+}
+
+.divider {
+  height: 2px;
+  overflow: hidden;
+  background-color: #23d2f9;
+}
+
+a.small-button.white-color {
+  color: white;
+  background-color: #23d2f9;
+}
+
 .large-button {
   padding: 15px 50px;
   font-size: 16px;
@@ -637,7 +659,6 @@ blockquote {
 
 #filters {
   margin: 100px 0 60px 0;
-  justify-content: center;
 }
 #filters li {
   display: inline;
@@ -730,8 +751,6 @@ blockquote {
 }
 
 .thumb-post {
-  display: block;
-  position: relative;
   overflow: hidden;
 }
 .thumb-post .overlay {
