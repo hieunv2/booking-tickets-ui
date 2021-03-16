@@ -1533,7 +1533,8 @@ ul.social-icons li a:hover {
   font-size: 24px;
   line-height: 30px;
   color: #333333;
-  margin-bottom: 8px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .movie-type {
@@ -1553,7 +1554,7 @@ ul.social-icons li a:hover {
   font-size: 16px;
   line-height: 24px;
   color: #828282;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .body-regular-16 {
