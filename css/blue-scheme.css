@@ -410,7 +410,7 @@ a.large-button.transparent-color {
 .divider {
   height: 2px;
   overflow: hidden;
-  background-color: #23d2f9;
+  background-color: #fff;
 }
 
 a.large-button.white-color {
@@ -1449,4 +1449,12 @@ blockquote {
     width: 100%;
     height: auto;
   }
+}
+
+.heading3{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
 }
