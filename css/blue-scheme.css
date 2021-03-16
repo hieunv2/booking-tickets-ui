@@ -12,7 +12,7 @@ http://www.templatemo.com/preview/templatemo_460_medigo
 body {
   background: white;
   font-size: 16px;
-  font-family:"Poppins";
+  font-family: "Poppins";
   font-weight: normal;
   font-style: normal;
   line-height: 28px;
@@ -447,7 +447,7 @@ a.large-button.white-color {
 }
 
 a.main-button.accent-color {
-  background: #23D2F9;
+  background: #23d2f9;
   color: white;
 }
 a.main-button.accent-color:hover {
@@ -1483,8 +1483,7 @@ ul.social-icons li a:hover {
   color: #fff;
 }
 
-
-.heading2{
+.heading2 {
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
@@ -1492,7 +1491,7 @@ ul.social-icons li a:hover {
   line-height: 30px;
 }
 
-.movie-name{
+.movie-name {
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
@@ -1503,7 +1502,7 @@ ul.social-icons li a:hover {
   margin-bottom: 16px;
 }
 
-.movie-type{
+.movie-type {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
@@ -1513,7 +1512,7 @@ ul.social-icons li a:hover {
   margin-bottom: 8px;
 }
 
-.movie-time{
+.movie-time {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
@@ -1523,7 +1522,7 @@ ul.social-icons li a:hover {
   margin-bottom: 16px;
 }
 
-.body-regular-16{
+.body-regular-16 {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;

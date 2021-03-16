@@ -1091,15 +1091,16 @@ html[xmlns] .slides {
   }
 }
 
-::-webkit-input-placeholder { /* Edge */
-  color: #E0E0E0;
+::-webkit-input-placeholder {
+  /* Edge */
+  color: #e0e0e0;
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: #E0E0E0;
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #e0e0e0;
 }
 
 ::placeholder {
-  color: #E0E0E0;
+  color: #e0e0e0;
 }
-
