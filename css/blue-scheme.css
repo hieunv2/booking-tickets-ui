@@ -160,7 +160,7 @@ img::-moz-selection {
 
 .footer-menu,
 .copyright-text {
-  text-align: center;
+  text-align: left;
 }
 
 .main-nav ul,
@@ -1368,7 +1368,6 @@ blockquote {
 }
 
 .footer-menu li {
-  display: inline-block;
   margin: 0 20px;
 }
 .footer-menu li a {
@@ -1451,7 +1450,7 @@ blockquote {
   }
 }
 
-.heading3{
+.heading3 {
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
