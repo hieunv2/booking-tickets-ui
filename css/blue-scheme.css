@@ -352,8 +352,9 @@ a.menu-toggle-btn i {
 }
 
 .section-header {
-  padding-bottom: 70px;
+  padding-bottom: 30px;
   text-align: center;
+  margin-bottom: 40px;
 }
 .section-header .section-title {
   font-size: 30px;
@@ -775,6 +776,11 @@ blockquote {
   height: 100%;
   position: relative;
 }
+
+.team-member:hover h4 {
+  color: #00a8d6;
+}
+
 .thumb-post:hover .overlay {
   opacity: 1;
   visibility: visible;
@@ -1359,6 +1365,7 @@ blockquote {
 }
 
 .site-footer {
+  margin-top: 30px;
   background-color: #02181d;
   padding: 100px 0;
   color: #aaaaaa;
