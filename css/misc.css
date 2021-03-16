@@ -514,13 +514,16 @@
 /* PAGER */
 .bx-wrapper .bx-pager {
   text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  z-index: 100;
 }
 
 .bx-wrapper .bx-pager .bx-pager-item,
 .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
-  display: inline-block;
   *zoom: 1;
-  *display: inline;
+  margin-top: 20px;
 }
 
 /* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
