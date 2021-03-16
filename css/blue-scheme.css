@@ -189,7 +189,6 @@ a:visited {
 .service-section,
 .first-widget {
   position: relative;
-  margin-top: 108px;
 }
 
 .light-content,
@@ -371,11 +370,10 @@ a.menu-toggle-btn i {
 }
 
 .large-button {
-  padding: 15px 20px;
-  font-size: 12px;
-  font-family: "Raleway", sans-serif;
+  padding: 15px 50px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
-  font-weight: 800;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
@@ -383,9 +381,19 @@ a.menu-toggle-btn i {
   border-radius: 2px;
 }
 
+a.large-button.transparent-color {
+  border: 1px solid #23d2f9;
+}
+
+.divider {
+  height: 2px;
+  overflow: hidden;
+  background-color: #23d2f9;
+}
+
 a.large-button.white-color {
-  color: #31373a;
-  background-color: white;
+  color: white;
+  background-color: #23d2f9;
 }
 
 .login-button {
@@ -489,7 +497,6 @@ input.mainBtn {
 }
 
 #homeIntro {
-  background-image: url("../images/includes/homeintro.jpg");
 }
 
 #portfolio {
@@ -518,12 +525,9 @@ input.mainBtn {
 }
 
 .parallax {
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
+  background-position: top center;
   background-size: cover;
   color: #fff;
-  overflow: hidden;
 }
 
 .parallax-overlay {
@@ -554,19 +558,25 @@ input.mainBtn {
   border-radius: 3px;
 }
 
+.image-carousel {
+  height: 100vh;
+  width: 100%;
+}
+
 .home-intro-content {
   padding: 11em 0;
-  text-align: center;
+  text-align: left;
 }
 .home-intro-content h2 {
-  font-size: 36px;
-  font-weight: 800;
+  font-size: 96px;
+  font-weight: bold;
   color: white;
 }
 .home-intro-content p {
-  margin: 55px 0;
-  font-size: 18px;
+  margin: 20px 0;
+  font-size: 16px;
   line-height: 32px;
+  width: 50%;
 }
 .home-intro-content .large-button:hover {
   opacity: 0.8;
@@ -627,23 +637,19 @@ blockquote {
 
 #filters {
   margin: 100px 0 60px 0;
+  justify-content: center;
 }
 #filters li {
   display: inline;
-  margin-right: 20px;
   cursor: pointer;
-  color: #31373a;
+  font-size: 24px;
+  margin-right: 20px;
+  color: #bdbdbd;
 }
-#filters li:after {
-  content: "/";
-  color: #c3c3c3;
-  margin-left: 20px;
-}
-#filters li:last-child:after {
-  content: "";
-}
+
 #filters li.active {
-  color: #00a8d6;
+  color: #4f4f4f;
+  font-size: 30px;
 }
 
 .pages {
