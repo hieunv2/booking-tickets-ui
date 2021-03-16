@@ -432,10 +432,8 @@ a.large-button.white-color {
 }
 
 .main-button {
-  padding: 15px 20px;
   font-size: 16px;
   padding: 12px 15px;
-  font-size: 14px;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -1361,7 +1359,7 @@ blockquote {
 }
 
 .site-footer {
-  background-color: #f1f4f5;
+  background-color: #02181d;
   padding: 100px 0;
   color: #aaaaaa;
   font-family: "Raleway", sans-serif;
@@ -1456,4 +1454,24 @@ blockquote {
   font-weight: bold;
   font-size: 20px;
   line-height: 30px;
+}
+
+ul.social-icons li {
+  display: inline-block;
+}
+
+ul.social-icons li:last-child {
+}
+
+ul.social-icons li a {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  color: white;
+  font-size: 18px;
+  transition: all 0.3s;
+}
+
+ul.social-icons li a:hover {
+  color: #fff;
 }
