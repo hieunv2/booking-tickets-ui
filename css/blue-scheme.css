@@ -429,11 +429,11 @@ a.time-button.grey-color {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
 }
 
 a.large-button.transparent-color {
@@ -447,8 +447,13 @@ a.large-button.transparent-color {
 }
 
 a.large-button.white-color {
-  color: white;
-  background-color: #23d2f9;
+  color: #828282;
+  background-color:#FFFFFF;
+}
+
+a.large-button.white-color:hover{
+  background-color: #00AFD6;
+  color: #fff;
 }
 
 .login-button {
@@ -487,6 +492,7 @@ a.main-button.accent-color:hover {
 
 .icon-button {
   margin-left: 15px;
+
 }
 
 .last-item-margin {
@@ -541,6 +547,7 @@ textarea:focus {
 button {
   outline: 0;
   border: 0;
+  border-radius: 5px;
 }
 
 input.mainBtn:focus,
@@ -1634,3 +1641,5 @@ ul.social-icons li a:hover {
   color: #828282;
   margin-top: 32px;
 }
+
+
