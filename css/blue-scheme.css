@@ -393,6 +393,37 @@ a.small-button.white-color {
   background-color: #23d2f9;
 }
 
+.time-button {
+  padding: 10px 50px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+a.time-button.transparent-color {
+  border: 1px solid #23d2f9;
+}
+
+a.time-button.white-color {
+  color: white;
+  background-color: #23d2f9;
+}
+
+a.time-button.black-color {
+  color: white;
+  background-color: #828282;
+}
+
+a.time-button.grey-color {
+  color: white;
+  background-color: #e0e0e0;
+}
+
 .large-button {
   padding: 15px 50px;
   font-size: 16px;
@@ -602,6 +633,10 @@ input.mainBtn {
 }
 .home-intro-content .large-button:hover {
   opacity: 0.8;
+}
+
+.movie-banner {
+  margin-top: 50px;
 }
 
 blockquote {
