@@ -1701,6 +1701,34 @@ ul.social-icons li a:hover {
   border-radius: 5px;
 }
 
+.btn.styled-btn.focus,
+.btn.styled-btn:focus {
+  color: #fff;
+  background-color: #00a8d6;
+  outline: none;
+}
+.btn.styled-btn:hover {
+  color: #fff;
+  background-color: #00a8d6;
+  outline: none;
+}
+.btn.styled-btn.active,
+.btn.styled-btn:active {
+  color: #fff;
+  background-color: #00a8d6;
+  outline: none;
+}
+.btn.styled-btn.active.focus,
+.btn.styled-btn.active:focus,
+.btn.styled-btn.active:hover,
+.btn.styled-btn:active.focus,
+.btn.styled-btn:active:focus,
+.btn.styled-btn:active:hover {
+  color: #fff;
+  background-color: #00a8d6;
+  outline: none;
+}
+
 .mt-50 {
   margin-top: 50px;
 }
