@@ -1744,3 +1744,26 @@ ul.social-icons li a:hover {
   font-size: 30px;
   line-height: 30px;
 }
+
+
+.extra-small-button {
+  padding: 5px 12px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 36px;
+  color: white; background-color: #2F80ED;
+}
+
+.heading3-medium-20{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  /* or 150% */
+
+  text-transform: uppercase;
+}
+
