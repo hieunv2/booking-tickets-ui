@@ -339,8 +339,11 @@ a.menu-toggle-btn i {
   width: 100%;
 }
 
-.dark-content {
+.dark-background {
   background-color: #31373a;
+}
+
+.dark-content {
   width: 100%;
   padding: 70px 0 80px 0;
 }
@@ -448,12 +451,17 @@ a.large-button.transparent-color {
 
 a.large-button.white-color {
   color: #828282;
-  background-color:#FFFFFF;
+  background-color: #ffffff;
 }
 
-a.large-button.white-color:hover{
-  background-color: #00AFD6;
+a.button-hover:hover {
+  background-color: #00afd6;
   color: #fff;
+}
+
+a.large-button.white-color:active {
+  color: white;
+  background-color: #23d2f9;
 }
 
 .login-button {
@@ -492,7 +500,6 @@ a.main-button.accent-color:hover {
 
 .icon-button {
   margin-left: 15px;
-
 }
 
 .last-item-margin {
@@ -1572,26 +1579,24 @@ ul.social-icons li a:hover {
   line-height: 24px;
 }
 
-.heading1{
+.heading1 {
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
   line-height: 30px;
   /* identical to box height, or 100% */
-  
 }
 
-.heading2{
+.heading2 {
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
-  
 }
 
-.detail{
+.detail {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
@@ -1599,25 +1604,23 @@ ul.social-icons li a:hover {
   line-height: 24px;
   /* or 150% */
 
-
   color: #000000;
-
 }
 
-.map-img{
+.map-img {
   text-align: center;
 }
 
-.btn-address{
+.btn-address {
   width: 100%;
   height: 74px;
   left: 1340px;
   top: 152px;
 
-  background: #F2F2F2;
+  background: #f2f2f2;
   /* Gray 5 */
 
-  border: 1px solid #E0E0E0;
+  border: 1px solid #e0e0e0;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   color: #828282;
@@ -1625,7 +1628,7 @@ ul.social-icons li a:hover {
   text-align: center;
 }
 
-.body-regular-14{
+.body-regular-14 {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
@@ -1633,8 +1636,8 @@ ul.social-icons li a:hover {
   line-height: 21px;
 }
 
-.choose-cinema{
-  background: #FFFFFF;
+.choose-cinema {
+  background: #ffffff;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   align-items: center;
@@ -1642,4 +1645,62 @@ ul.social-icons li a:hover {
   margin-top: 32px;
 }
 
+.custom-container {
+  max-width: 1400px;
+  margin: auto;
+  margin-top: 100px;
+}
 
+.theater-card {
+  border-radius: 5px;
+  padding: 0px;
+  height: 460px;
+  width: 100%;
+}
+
+.theater-info {
+  width: 100%;
+  height: 120px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.theater-name {
+  color: #828282;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.theater-address {
+  color: #828282;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 21px;
+}
+
+.divider-grey {
+  height: 1px;
+  background-color: grey;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.styled-btn {
+  padding: 1rem 1rem;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  border-radius: 0.3rem;
+  margin: 20px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
