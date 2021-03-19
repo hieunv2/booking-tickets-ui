@@ -172,6 +172,7 @@ img::-moz-selection {
 .main_menu li ul,
 #filters,
 #myTab .pages,
+#myTab1 .pages,
 .project-single .meta-post,
 .archive-wrapper .archive-list,
 .categories ul,
@@ -606,7 +607,7 @@ input.mainBtn {
   color: #fff;
 }
 
-.parallax-overlay {
+.parallax- {
   background-color: rgba(0, 0, 0, 0.65);
 }
 
@@ -736,6 +737,18 @@ ul#myTab.nav.inline {
   align-items: center;
 }
 
+#myTab1 li {
+  cursor: pointer;
+  font-size: 24px;
+  color: #bdbdbd;
+}
+
+ul#myTab1.nav.inline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #filters li.active {
   color: #00a8d6;
   font-size: 30px;
@@ -857,6 +870,51 @@ ul#myTab.nav.inline {
   -ms-transform: scale(1);
   -o-transform: scale(1);
   transform: scale(1);
+}
+
+.thumb-theater {
+  overflow: hidden;
+}
+.thumb-theater .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  padding-left: 20px;
+}
+.thumb-theater .overlay .overlay-inner {
+  height: 100%;
+  position: relative;
+}
+
+.thumb-theater:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+.thumb-theater:hover .theater-info {
+  background-color: #00a8d6 !important;
+}
+
+.thumb-theater:hover .theater-info p {
+  color: white !important;
 }
 
 .portfolio-infos {
@@ -1679,6 +1737,8 @@ ul.social-icons li a:hover {
 }
 
 .theater-card {
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
   border-radius: 5px;
   padding: 0px;
   height: 460px;
@@ -1712,7 +1772,7 @@ ul.social-icons li a:hover {
 
 .divider-grey {
   height: 1px;
-  background-color: #7B7B7B;
+  background-color: #7b7b7b;
   width: 100%;
   margin-bottom: 50px;
 }
@@ -1776,6 +1836,14 @@ ul.social-icons li a:hover {
   font-style: normal;
   line-height: 40px;
   text-align: left;
+}
+
+.card-body .card-title {
+  color: #333333;
+}
+
+.card-body .card-text {
+  color: #bdbdbd;
 }
 
 .card-text {
@@ -1930,17 +1998,6 @@ a.tab:active {
   background-color: transparent !important;
 }
 
-li.nav-item:after {
-  content: " ";
-  word-spacing: 1em;
-  background-image: linear-gradient(
-    -0.2turn,
-    transparent 0 calc(50% - 0.03em),
-    currentcolor 0 calc(50% + 0.03em),
-    transparent 0
-  );
-}
-
 div.divider {
   width: 2px;
   height: 30px;
@@ -1949,17 +2006,17 @@ div.divider {
   margin: 0px 10px;
 }
 
-.note{
+.note {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  color: #B1B1B1;
+  color: #b1b1b1;
   margin: 2.5px 0px;
 }
 
-.label-checkout{
+.label-checkout {
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
@@ -1971,7 +2028,7 @@ div.divider {
   margin-bottom: 16px;
 }
 
-.detail-checkout{
+.detail-checkout {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
@@ -1982,7 +2039,7 @@ div.divider {
   margin-bottom: 22px;
 }
 
-.sum-checkout{
+.sum-checkout {
   font-family: Helvetica Neue;
   font-style: normal;
   font-weight: 500;
@@ -1991,7 +2048,7 @@ div.divider {
   color: #333333;
 }
 
-.detail-sum-checkout{
+.detail-sum-checkout {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
@@ -2000,7 +2057,7 @@ div.divider {
   color: #333333;
 }
 
-.checkout-button{
+.checkout-button {
   font-family: Helvetica Neue;
   font-style: normal;
   font-weight: 500;
@@ -2008,40 +2065,40 @@ div.divider {
   line-height: 20px;
   align-items: center;
   text-align: center;
-  
-  color: #C6C6C6;
 
-  border: 1px solid #C4C4C4;
+  color: #c6c6c6;
+
+  border: 1px solid #c4c4c4;
   box-sizing: border-box;
   border-radius: 5px;
 
   padding: 20px 35px;
 }
 
-.checkout-button:hover{
-  background: #23D2F9;
+.checkout-button:hover {
+  background: #23d2f9;
   color: #fff;
 }
 
-.body-medium-16{
+.body-medium-16 {
   font-family: Poppins;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 24px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
 }
 
-.checkout-heading{
+.checkout-heading {
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 36px;
 
-  color: #00AFD6;
+  color: #00afd6;
 }
 
-.meal-label{
+.meal-label {
   font-family: Helvetica Neue;
   font-style: normal;
   font-weight: 500;
@@ -2050,7 +2107,7 @@ line-height: 24px;
   color: #333333;
 }
 
-.meal-detail{
+.meal-detail {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
@@ -2059,7 +2116,7 @@ line-height: 24px;
   color: #828282;
 }
 
-.meal-price{
+.meal-price {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -2068,32 +2125,32 @@ line-height: 24px;
   color: #000000;
 }
 
-.robo-heading{
+.robo-heading {
   font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 23px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
 
-color: #000000;
+  color: #000000;
 }
 
-.robo-label{
+.robo-label {
   font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
 
-color: #000000;
+  color: #000000;
 }
 
-.robo-content{
+.robo-content {
   font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 21px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
 
-color: #000000;
+  color: #000000;
 }
