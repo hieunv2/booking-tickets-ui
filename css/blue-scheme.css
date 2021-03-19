@@ -78,6 +78,10 @@ p.lead {
   line-height: 36px;
 }
 
+p {
+  word-break: break-all;
+}
+
 em,
 i {
   font-style: italic;
@@ -246,7 +250,7 @@ a:visited {
 .main-nav ul li a i {
   margin-left: 7px;
 }
-.main-nav ul li.active a {
+.main-nav ul li a:active {
   color: #23d2f9;
   background-color: white;
 }
@@ -425,6 +429,11 @@ a.time-button.black-color {
 a.time-button.grey-color {
   color: white;
   background-color: #e0e0e0;
+}
+
+a.time-button:hover {
+  background-color: #00afd6;
+  color: #fff;
 }
 
 .large-button {
@@ -728,7 +737,7 @@ ul#myTab.nav.inline {
 }
 
 #filters li.active {
-  color: #4f4f4f;
+  color: #00a8d6;
   font-size: 30px;
 }
 
@@ -816,7 +825,6 @@ ul#myTab.nav.inline {
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100%;
   height: 100%;
   visibility: hidden;
   opacity: 0;
@@ -830,9 +838,9 @@ ul#myTab.nav.inline {
   -ms-transition: all 250ms ease-in-out;
   -o-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
+  padding: 0px 18px;
 }
 .thumb-post .overlay .overlay-inner {
-  background: #00a8d6;
   height: 100%;
   position: relative;
 }
@@ -853,16 +861,17 @@ ul#myTab.nav.inline {
 
 .portfolio-infos {
   position: absolute;
-  bottom: 30px;
-  left: 30px;
+  bottom: 0px;
+  left: 15px;
 }
 .portfolio-infos a {
   color: white;
 }
 .portfolio-infos .portfolio-title {
-  margin: 10px 0 0 0;
-  font-weight: 600;
-  font-size: 20px;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 24px;
+  color: white;
 }
 .portfolio-infos .meta-category {
   font-size: 14px;
@@ -871,7 +880,7 @@ ul#myTab.nav.inline {
 
 .portfolio-expand {
   position: absolute;
-  top: 30px;
+  top: 50px;
   right: 30px;
   width: 40px;
   height: 40px;
@@ -1597,7 +1606,6 @@ ul.social-icons li a:hover {
   line-height: 30px;
 }
 
-
 .heading1 {
   font-family: Poppins;
   font-style: normal;
@@ -1752,6 +1760,62 @@ ul.social-icons li a:hover {
   outline: none;
 }
 
+.card-btn {
+  font-size: 20px;
+  font-family: Helvetica Neue;
+  border-radius: 0.3rem;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  background-color: #ffffff;
+  height: 160px;
+  width: 100%;
+  color: #333333;
+  font-weight: 500;
+  margin-top: 20px;
+  white-space: normal;
+  font-style: normal;
+  line-height: 40px;
+  text-align: left;
+}
+
+.card-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #bdbdbd;
+  width: 100%;
+}
+
+.btn.card-btn.focus,
+.btn.card-btn:focus {
+  color: #fff;
+  background-color: #00a8d6;
+  outline: none;
+}
+.btn.card-btn:hover {
+  color: #fff;
+  background-color: #00a8d6;
+  outline: none;
+}
+.btn.card-btn.active,
+.btn.card-btn:active {
+  color: #fff;
+  background-color: #00a8d6;
+  outline: none;
+}
+.btn.card-btn.active.focus,
+.btn.card-btn.active:focus,
+.btn.card-btn.active:hover,
+.btn.card-btn:active.focus,
+.btn.card-btn:active:focus,
+.btn.card-btn:active:hover {
+  color: #fff;
+  background-color: #00a8d6;
+  outline: none;
+}
+
 .mt-50 {
   margin-top: 50px;
 }
@@ -1786,10 +1850,10 @@ ul.social-icons li a:hover {
   text-transform: uppercase;
 }
 
-.btn-img{
-  width:45%;
+.btn-img {
+  width: 45%;
   padding: 5px;
-/* Gray 3 */
+  /* Gray 3 */
 
   border: 1px solid #828282;
   text-align: center;
@@ -1811,21 +1875,21 @@ ul.social-icons li a:hover {
   border-radius: 5px;
 }
 
-.my-input{
-  border: 1px solid #C4C4C4;
+.my-input {
+  border: 1px solid #c4c4c4;
   background-color: #fff;
   border-radius: 5px;
 }
 
-.menu-bold-16{
+.menu-bold-16 {
   font-family: Poppins;
-font-style: normal;
-font-weight: bold;
-font-size: 16px;
-line-height: 30px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
 }
 
-.center-text{
+.center-text {
   font-family: Helvetica Neue;
   font-style: normal;
   font-weight: 500;
@@ -1838,10 +1902,10 @@ line-height: 30px;
   color: #000000;
 }
 
-.dvd{
+.dvd {
   width: 1px;
   height: 80px;
-  background: #C4C4C4;
+  background: #c4c4c4;
 }
 ul.inline > li,
 ol.inline > li {
@@ -1858,6 +1922,7 @@ a.tab:visited {
   font-size: 24px;
 }
 
+a.tab:hover,
 a.tab:focus,
 a.tab:active {
   color: #00a8d6;
