@@ -1597,6 +1597,15 @@ ul.social-icons li a:hover {
   line-height: 24px;
 }
 
+.body-regular-20 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+
 .heading1 {
   font-family: Poppins;
   font-style: normal;
@@ -1841,6 +1850,63 @@ ul.social-icons li a:hover {
   text-transform: uppercase;
 }
 
+.btn-img{
+  width:45%;
+  padding: 5px;
+/* Gray 3 */
+
+  border: 1px solid #828282;
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  /* or 150% */
+
+  align-items: center;
+  text-align: center;
+
+  color: #828282;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.my-input{
+  border: 1px solid #C4C4C4;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.menu-bold-16{
+  font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 30px;
+}
+
+.center-text{
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.dvd{
+  width: 1px;
+  height: 80px;
+  background: #C4C4C4;
+}
 ul.inline > li,
 ol.inline > li {
   display: inline-block !important;
