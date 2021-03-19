@@ -1712,7 +1712,7 @@ ul.social-icons li a:hover {
 
 .divider-grey {
   height: 1px;
-  background-color: grey;
+  background-color: #7B7B7B;
   width: 100%;
   margin-bottom: 50px;
 }
@@ -2029,4 +2029,71 @@ font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 24px;
+}
+
+.checkout-heading{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #00AFD6;
+}
+
+.meal-label{
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.meal-detail{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #828282;
+}
+
+.meal-price{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.robo-heading{
+  font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 23px;
+
+color: #000000;
+}
+
+.robo-label{
+  font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+
+color: #000000;
+}
+
+.robo-content{
+  font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+
+color: #000000;
 }
