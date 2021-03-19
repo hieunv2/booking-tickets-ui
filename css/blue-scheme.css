@@ -78,6 +78,10 @@ p.lead {
   line-height: 36px;
 }
 
+p {
+  word-break: break-all;
+}
+
 em,
 i {
   font-style: italic;
@@ -425,6 +429,11 @@ a.time-button.black-color {
 a.time-button.grey-color {
   color: white;
   background-color: #e0e0e0;
+}
+
+a.time-button:hover {
+  background-color: #00afd6;
+  color: #fff;
 }
 
 .large-button {
@@ -832,7 +841,6 @@ ul#myTab.nav.inline {
   transition: all 250ms ease-in-out;
 }
 .thumb-post .overlay .overlay-inner {
-  background: #00a8d6;
   height: 100%;
   position: relative;
 }
@@ -1743,6 +1751,62 @@ ul.social-icons li a:hover {
   outline: none;
 }
 
+.card-btn {
+  font-size: 20px;
+  font-family: Helvetica Neue;
+  border-radius: 0.3rem;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  background-color: #ffffff;
+  height: 160px;
+  width: 100%;
+  color: #333333;
+  font-weight: 500;
+  margin-top: 20px;
+  white-space: normal;
+  font-style: normal;
+  line-height: 40px;
+  text-align: left;
+}
+
+.card-text {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #bdbdbd;
+  width: 100%;
+}
+
+.btn.card-btn.focus,
+.btn.card-btn:focus {
+  color: #fff;
+  background-color: #00a8d6;
+  outline: none;
+}
+.btn.card-btn:hover {
+  color: #fff;
+  background-color: #00a8d6;
+  outline: none;
+}
+.btn.card-btn.active,
+.btn.card-btn:active {
+  color: #fff;
+  background-color: #00a8d6;
+  outline: none;
+}
+.btn.card-btn.active.focus,
+.btn.card-btn.active:focus,
+.btn.card-btn.active:hover,
+.btn.card-btn:active.focus,
+.btn.card-btn:active:focus,
+.btn.card-btn:active:hover {
+  color: #fff;
+  background-color: #00a8d6;
+  outline: none;
+}
+
 .mt-50 {
   margin-top: 50px;
 }
@@ -1792,6 +1856,7 @@ a.tab:visited {
   font-size: 24px;
 }
 
+a.tab:hover,
 a.tab:focus,
 a.tab:active {
   color: #00a8d6;
