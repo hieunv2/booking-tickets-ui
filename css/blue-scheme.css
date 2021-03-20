@@ -413,6 +413,36 @@ a.small-button.white-color {
   border-radius: 5px;
 }
 
+.time-button-dis {
+  padding: 10px 50px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+a.time-button-dis.white-color {
+  color: white;
+  background-color: #23d2f9;
+}
+
+a.time-button-dis {
+  pointer-events: none;
+}
+
+a.time-button-dis.black-color {
+  color: white;
+  background-color: #828282;
+}
+
+a.time-button-dis.transparent-color {
+  border: 1px solid #23d2f9;
+}
+
 a.time-button.transparent-color {
   border: 1px solid #23d2f9;
 }
@@ -453,7 +483,6 @@ a.large-button.transparent-color {
   border: 1px solid #23d2f9;
 }
 
-
 .divider {
   height: 2px;
   overflow: hidden;
@@ -481,16 +510,16 @@ a.large-button.naked-color {
 
 a.large-button.naked-color:hover {
   color: #fff !important;
-  background-color: #00AFD6 !important;
+  background-color: #00afd6 !important;
 }
 
-a.large-button.blue-color{
-  background: #23D2F9;
+a.large-button.blue-color {
+  background: #23d2f9;
   color: #fff;
 }
 
-a.large-button.blue-color:active{
-  background-color: #00AFD6;
+a.large-button.blue-color:active {
+  background-color: #00afd6;
 }
 
 .login-button {
@@ -911,7 +940,6 @@ ul#myTab1.nav.inline {
   -ms-transition: all 250ms ease-in-out;
   -o-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
-  padding-left: 20px;
 }
 .thumb-theater .overlay .overlay-inner {
   height: 100%;
@@ -1839,6 +1867,48 @@ ul.social-icons li a:hover {
   outline: none;
 }
 
+.styled-btn1 {
+  background-color: rgb(242, 242, 242);
+  color: #828282;
+  padding: 1rem 1rem;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  border-radius: 0.3rem;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  width: 176px;
+  height: 50px;
+}
+
+.btn.styled-btn1.focus,
+.btn.styled-btn1:focus {
+  color: #fff;
+  background-color: #1094b1;
+  outline: none;
+}
+.btn.styled-btn1:hover {
+  color: #fff;
+  background-color: #1094b1;
+  outline: none;
+}
+.btn.styled-btn1.active,
+.btn.styled-btn1:active {
+  color: #f2f2f2;
+  background-color: #828282;
+  outline: none;
+}
+.btn.styled-btn1.active.focus,
+.btn.styled-btn1.active:focus,
+.btn.styled-btn1.active:hover,
+.btn.styled-btn1:active.focus,
+.btn.styled-btn1:active:focus,
+.btn.styled-btn1:active:hover {
+  color: #fff;
+  background-color: #1094b1;
+  outline: none;
+}
+
 .card-btn {
   font-size: 20px;
   font-family: Helvetica Neue;
@@ -2172,4 +2242,66 @@ div.divider {
   line-height: 21px;
 
   color: #000000;
+}
+
+input,
+textarea {
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  padding: 10px;
+}
+
+input[type="button"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.input-group {
+  clear: both;
+  margin: 15px 0;
+  position: relative;
+}
+
+.input-group input[type="button"] {
+  background-color: #eeeeee;
+  min-width: 38px;
+  width: auto;
+  transition: all 300ms ease;
+}
+
+.input-group .button-minus,
+.input-group .button-plus {
+  font-weight: bold;
+  height: 38px;
+  padding: 0;
+  width: 38px;
+  position: relative;
+}
+
+.input-group .quantity-field {
+  position: relative;
+  height: 38px;
+  left: -6px;
+  text-align: center;
+  width: 62px;
+  display: inline-block;
+  font-size: 13px;
+  margin: 0 0 5px;
+  resize: vertical;
+}
+
+.button-plus {
+  left: -13px;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
 }
