@@ -20,12 +20,44 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="bootstrap/bootstrap.css" />
 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/blue-scheme.css" />
   <link rel="stylesheet" href="css/misc.css" />
+
+  <style>
+    .bs-example{
+    	margin: 20px;
+    }
+    .modal-dialog iframe{
+        margin: 0px auto;
+        display: block;
+    }
+</style>
 
   <!-- JavaScripts -->
   <script src="js/jquery-1.10.2.min.js"></script>
   <script src="js/jquery-migrate-1.2.1.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+      // Set iframe attributes when the show instance method is called
+      $("#videoModal").on("show.bs.modal", function(event) {
+          let button = $(event.relatedTarget); // Button that triggered the modal
+          let url = button.data("video");      // Extract url from data-video attribute
+          $(this).find("iframe").attr({
+              src : url,
+              allow : "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          });
+      });
+  
+      // Remove iframe attributes when the modal has finished being hidden from the user
+      $("#videoModal").on("hidden.bs.modal", function() {
+          $("#videoModal iframe").removeAttr("src allow");
+      });
+  });
+  </script>
 
   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
 </head>
@@ -128,8 +160,27 @@
                     </div>
                   </div>
                   <img src="./images/movie/bo-gia-comback-1614221525 1.png" style="width: 90%;" />
+                  <a data-toggle="modal" data-target="#videoModal" data-video="https://www.youtube.com/embed/jluSu8Rw6YE">
                     <img src="./images/movie/play-icon.png" style="width: 77px; height: 75px;position: absolute;left: 35%;bottom: 45%;" alt="">
-            </div>
+
+                  </a>
+              <!-- Modal HTML -->
+ <!-- Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+          <div class="modal-header bg-dark border-dark">
+              <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body bg-dark p-0">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" allowfullscreen></iframe>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+                  </div>
             <div class="col-md-8">
                 <div class="heading1" style="color:  #1094B1; margin-bottom: 32px;">
                     BỐ GIÀ
@@ -852,6 +903,8 @@
 <!-- /.site-footer -->
 
   <!-- Scripts -->
+
+
 
   <script src="js/min/plugins.min.js"></script>
   <script src="./js/medigo-custom.js"></script>

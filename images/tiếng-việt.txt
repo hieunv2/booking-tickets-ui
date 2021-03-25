@@ -1,0 +1,57 @@
+mục đích cính của 1 review code là để các kĩ sư khác đồng thuật với  thay đổi. khi được chấp thuận thì sự thay đổi đó sẽ được gắn tag lock good to me.
+code revew  thông qua  6 bước:
+1. Người viết ra thay đổi cần tạo ra 1 bản thông tin sơ bộ về sự thay đổi: phần code thay đổi và đặc tả sau đó upload lên công cụ revew.
+2. Người viết có thể tư đánh giá trước, sau khi đã hài lòng thì sẽ mail cho các reviewer, yêu cầu họ review và để lại bình luận
+3. Các reviewer xem xét và đặt câu hỏi, hoặc góp ý
+4. Người viết xem các bình luận. trả lời các câu hỏi và điều chỉnh. 
+5. Sau khi các reviewer hài lòng và chấp nhận sự thay đổi này trong code. thì họ sẽ cho sự thay đổi này 1 tag: looks good to me.
+6. Sự thay đổi được phép sử dụng.
+
+
+Cách code review hoạt động:
++ được kiểm tra bởi 1 kĩ sư phần mềm khác: hoạt động tốt
++ được cho phép bởi người chủ code( owner)
++ được viết cho 1 cách dễ đọc: theo style, và theo hướng mà mọi người mong đợi
+--> thường thì 3 việc này do cùng 1 người đảm nhận, người viết ra các thay đổi có thể đảm nhận 2 vai trò sau nhưng phần vote looks good to me phải là người khác làm
+
+Lợi ích việc code review:
++ kiểm tra tính đúng đắn của code
++ đảm bảo người khác có nắm được các thay đổi
++ đảm bảo tính nhất quá xuyên suốt codebase
++ chia sẻ hiểu biết cho nhau
++ thúc đẩy tâm lý về quyền sở hữu nhóm
++ cum cấp bản ghi về việc coder review
+
+-Kiểm tra tính đúng đắn của code: đảm bảo code hoạt động đúng, ko phát sinh lỗi, kiểm soát được lỗi sớm dẫn đến làm giảm thời gian sửa chữa sau này. Tiết kiệm được thời gian debbug, testing, kiêm tra truy hổi
+1 thay đổi sẽ không được chấp nhận nếu đó chỉ là ý kiến cá nhân, reviewer có thể yêu cầu tác giả làm lại để cải thiện làm giảm độ phức tạp hoặc tăng hiệu năng của thay đổi. Nhưng nhìn chung thì mọi thay đổi có ích, cải thiện codebase sẽ được duyệt thay vì xem xét và tìm ra giải pháp hoàn hảo. Làm như vậy sẽ tiết kiệm thời gian
+Có nhiều công cụ giúp thực hiện việc này nhanh hơn, nhưng vẫn không thể thay thế hoàn toàn con người
+-đảm bảo người khác nắm được các thay đổi: những thay đổi cần phải dễ đọc, dễ hiểu đối với người khác, và làm rõ những câu hỏi được đặt ra
+-đảm bảo tính nhất quán: nhiều người có thể cần đọc mã mà mk viết ra, bao gồm cả các công cụ. vì vậy viết mã cần tuân thủ 1 số các tiêu chuẩn giúp người khác dễ dàng đánh giá và duy trì hơn, tiện trong việc lưu trữ trong kho mã của google. Vì sẽ được đọc đi đọc lại hàng trăm ngàn lần lên điều này rất quan trọng
+- thúc đẩy tâm lý về sở hữu nhóm: các kĩ sư phần mềm thường có khuynh hướng viết code theo ý kiến chủ quan. quá trình review code củng cố thêm cho các kĩ sư rằng code này không phải của riêng họ mà là của tập thể, hướng các kĩ sư đến lợi ích cho nhóm.thông thường, 1 người sẽ có khuynh hướng đề cao những gì mình làm và khó tiếp nhận những lời phê bình. Quá trình Review code luôn luôn xuất hiện những lời phê bình, đánh giá tệ từ những reviewer, nhưng tác giả lại không thể phê bình tiêu cực về công việc của họ, mà tự hiểu rằng bản chất của reivew code là đánh giá và tình ra những khuyết điểm để cải thiện code. Vì vậy, càng về sau, các kĩ sư sẽ càng có khuynh hướng  coi trong những lời khuyên vafnhungwx câu hỏi nhận được trong quá trình code review.
+- chia sẻ kiến thức:  Quá trình xem xét cho phép người đánh giá truyền đạt kiến ​​thức cho tác giả, cho phép (các) người đánh giá để đưa ra các đề xuất, kỹ thuật mới hoặc thông tin tư vấn cho tác giả.
+                       The review process allows reviewers to impart domain knowledge to the author, allowing the reviewer(s) to offer suggestions, new techniques, or advisory information to the author.
+
+-để quá trình reivew code hiệu quả:
++ Be Polite and Professional: reviewers should defer to authors on particular approaches, and only point out alternatives if the author’s approach is deficient. If an author can demonstrate that several approaches are equally valid, the reviewer should accept the preference of the author
+                              Xem như là 1 cơ hội học hỏi khi cách tiếp cận có vấn đề :Even in those cases, if defects are found in an approach, consider the review a learning opportunity
+                              reviewer should ask questions on why something was done the way it was before assuming that approach is wrong 
+                              reviewer lên mau chóng để lại freeback : Reviewers should be prompt with their feedback
+                              
++ Write Small Changes(chỉ tạo ra các chỉnh sửa nhỏ):
+             Google’s code review process discourages massive changes consisting of fully formed projects( không khuyến kích những thay đổi lớn trên 1 project) because massive changes waste too much time waiting for the review code (quá lãng phí tg cho việc review code)
+             A Small change is easy to determine the source of a bug within it (dễ phát hiện lỗi)
+             Most changes at Google are expected to be reviewed within about a day
+             “Small” changes should generally be limited to about 200 lines of code
++ Write Good Change Descriptions:
+             the first line should indicate its type of change as a summary.
+             the description should still go into detail on what is being changed and why
+             During the review process, the description should be updated, changed base on reviewers' commits
++ Keep Reviewers to a Minimum: Most code reviews at Google are reviewed by precisely one reviewer ( hầu hết review code đc thực hiện bởi 1 người).
++ Automate Where Possible (tự động hóa nếu có thể)
+
+-Types of code review:
++ Greenfield Code Reviews
+
+
+
+             

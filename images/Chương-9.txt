@@ -1,0 +1,62 @@
+                                                   Code Review
+- Definition: Code review is a process in which code is reviewed by someone other than the author, often before the introduction of that code into a codebase
+
+- The prime goal of Code Review:  is to get another engineer to consent to the change, which we denote by tagging the change as “looks good to me.” 
+
+- Generally, Code Review goes throung 6 steps:
+  + When creating a change, the author has to create  a snapshot of the change ( including : a code changed and description)
+  + The author mail the change to one or more reviewers. This process notifies those reviewers asking them to view and comment on the snapshot.
+  + Reviewers consider the change, then comment, make questions, or make a suggestion ( leave a freeback) 
+  + The author consider freebacks, then answers questions, modifies the change and uploads new snapshots again
+  + After the reviewers are happy with the latest state of the change, they agree to the change and accept it by marking it as “looks good to me.”
+  + After a change is marked “looks good to me,” the author is allowed to commit the change to the codebase
+
+- At google, A change maked “looks good to me ”, has to have 3 aspects:
+  + It is checked by another engineer that it works well
+  + Approval from one of the code owners
+  + It is written in the “readability” manner: easy to read, conforms to the language’s style, and in the manner the others expect.
+
+- Code Review Benefits:
+  + Checks code correctness
+  + Ensures the code change is comprehensible to other engineers
+  + Enforces consistency across the codebase
+  + Psychologically promotes team ownership
+  + Enables knowledge sharing
+  + Provides a historical record of the code review itself
+
+
+
+     - Checks code correctness: 
+         + ensures the code change works well, efficiently. It cant make bugs.
+         + that discovering defects earlier, led to less time required to fix them later on.
+         + Saving time for debbugging, testing, performing regressions
+    -  Comprehension of Code:
+         + the change code is easy to read, understand for other engineer 
+         + anwers the question on the change
+    -  Code Consistency:
+         + The change has to follow standard of coding because there are many people need to read the change, including review code tools, they are easy to evaluate and maintain.
+         + Easy to store it in the codebase.
+    -  Psychological and Cultural Benefits:
+         + 
+         + almost all engineers come to expect to be challenged when sending a code review and come to value the advice and questions offered through the review code.
+    -  Knowledge Sharing:
+         + The review process allows reviewers to impart domain knowledge to the author, allowing the reviewer(s) to offer suggestions, new techniques, or advisory information to the author.
+
+
+- Code Review Best Practices: 
++ Be Polite and Professional: reviewers should defer to authors on particular approaches, and only point out alternatives if the author’s approach is deficient. If an author can demonstrate that several approaches are equally valid, the reviewer should accept the preference of the author
+                              Xem như là 1 cơ hội học hỏi khi cách tiếp cận có vấn đề :Even in those cases, if defects are found in an approach, consider the review a learning opportunity
+                              reviewer should ask questions on why something was done the way it was before assuming that approach is wrong 
+                              reviewer lên mau chóng để lại freeback : Reviewers should be prompt with their feedback
+                              
++ Write Small Changes(chỉ tạo ra các chỉnh sửa nhỏ):
+             Google’s code review process discourages massive changes consisting of fully formed projects( không khuyến kích những thay đổi lớn trên 1 project) because massive changes waste too much time waiting for the review code (quá lãng phí tg cho việc review code)
+             A Small change is easy to determine the source of a bug within it (dễ phát hiện lỗi)
+             Most changes at Google are expected to be reviewed within about a day
+             “Small” changes should generally be limited to about 200 lines of code
++ Write Good Change Descriptions:
+             the first line should indicate its type of change as a summary.
+             the description should still go into detail on what is being changed and why
+             During the review process, the description should be updated, changed base on reviewers' commits
++ Keep Reviewers to a Minimum: Most code reviews at Google are reviewed by precisely one reviewer ( hầu hết review code đc thực hiện bởi 1 người).
++ Automate Where Possible (tự động hóa nếu có thể)
